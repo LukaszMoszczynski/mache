@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+/*jumbotron*/
+.hero {
+  background-image: url("../images/bg-1.png");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.hero .navbar-default {
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  opacity: 0.8;
+  transition: 0.5s;
+}
+
+.hero .navbar-default .navbar-nav li {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+}
+
+.hero .navbar-default .navbar-nav li a {
+  color: #FFFFFF;
+  transition: 0.5s;
+}
+
+.hero .navbar-default .navbar-nav li a:hover {
+  color: #ED145B;
+  border-bottom: 3px solid #ED145B;
+}
+
+.hero .spacer {
+  height: 50px;
+  margin: 0;
+}
+
+.hero .header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  color: #FFFFFF;
+}
+
+.hero .header h1 {
+  text-transform: uppercase;
+  font-weight: 100;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+}
+
+.hero .header h1 span {
+  font-weight: 900;
+}
+
+.hero .header hr {
+  border-color: #ED145B;
+  width: 30%;
+  border-width: 2px;
+}
+
+.hero .header p {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 3%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  line-height: 200%;
+}
+
+.hero .header a {
+  text-decoration: none;
+  color: #FFFFFF;
+  height: 50px;
+  width: 200px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  border-radius: 30px;
+  background-color: #ED145B;
+  transition: 0.5s;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+}
+
+.hero .header a:hover {
+  transform: scale(1.1);
+}
+
+/*power section*/
+.power {
+  position: relative;
+  background-color: #F4F4F4;
+}
+
+.power .triangle {
+  background-image: linear-gradient(to right bottom, #ED145B 50%, transparent 50%);
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  top: 0;
+  right: 0;
+}
+
+.power .container {
+  padding-top: 5%;
+}
+
+.power .container h2 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.power .container hr {
+  border-color: #ED145B;
+  width: 30%;
+  border-width: 2px;
+  margin: 5% 0;
+}
+
+.power .container p {
+  font-family: 'Lato', sans-serif;
+  line-height: 200%;
+}
+
+.power .container h3 {
+  margin: 10% 0 10% 0;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  color: #ED145B;
+}
+
+.power .container h3 i {
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 3rem;
+  transition: 1s;
+}
+
+.power .container h3 i:hover {
+  transform: scale(1.2);
+}
+
+/*services section*/
+.services {
+  position: relative;
+}
+
+.services .mac {
+  position: absolute;
+  top: -70%;
+  right: 0%;
+}
+
+.services .container {
+  padding-top: 10%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+.services .container h2 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.services .container hr {
+  border-color: #ED145B;
+  width: 15%;
+  border-width: 2px;
+  margin: 5% 0;
+}
+
+.services .container p {
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  line-height: 200%;
+}
+
+.services .container .row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 5% 0;
+  width: 100%;
+}
+
+.services .container .row div {
+  border: 1px grey solid;
+  width: 150px;
+  height: 150px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+.services .container .row div img {
+  transition: transform .8s ease-in-out;
+}
+
+.services .container .row div:hover img {
+  transform: rotate(360deg);
+}
+
+.services .container .row div:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
