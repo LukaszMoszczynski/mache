@@ -16,9 +16,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
 }
 
 .hero .navbar-default {
@@ -50,9 +53,12 @@
 }
 
 .hero .header {
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
   color: #FFFFFF;
 }
 
@@ -87,9 +93,12 @@
   color: #FFFFFF;
   height: 50px;
   width: 200px;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
   border-radius: 30px;
   background-color: #ED145B;
   transition: 0.5s;
@@ -170,10 +179,14 @@
 
 .services .container {
   padding-top: 10%;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
 }
 
 .services .container h2 {
@@ -196,28 +209,39 @@
 }
 
 .services .container .row {
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
   margin: 5% 0;
   width: 100%;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .services .container .row .col-lg-3 {
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
 }
 
 .services .container .row .col-lg-3 .circle {
   border: 1px #CDCDCD solid;
   width: 150px;
   height: 150px;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
   border-radius: 50%;
   transition: 0.5s;
 }
@@ -252,9 +276,12 @@
 }
 
 .slide .carousel {
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
   line-height: 300%;
   text-align: center;
   font-family: 'Lato', sans-serif;
@@ -269,9 +296,12 @@
 
 /*prices section*/
 .prices {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
   background-color: #F4F4F4;
   padding-top: 5%;
 }
@@ -296,10 +326,14 @@
 }
 
 .prices .row {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding-top: 5%;
 }
 
@@ -316,10 +350,14 @@
   background-color: #5A5A5A;
   text-align: center;
   color: #FFFFFF;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
   position: relative;
   transition: 1s;
 }
@@ -341,9 +379,12 @@
   width: 150px;
   height: 40px;
   color: black;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
   position: absolute;
   bottom: -20%;
 }
@@ -351,10 +392,14 @@
 .prices .row .col-lg-3 .bottom {
   background-color: #FFFFFF;
   padding-top: 20%;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
 }
 
 .prices .row .col-lg-3 .bottom ul {
@@ -370,9 +415,12 @@
   border-radius: 20px;
   width: 150px;
   height: 40px;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
   background-color: #ED145B;
   color: #FFFFFF;
   margin: 10% 0;
@@ -405,18 +453,24 @@
 .community {
   background-color: #ED145B;
   height: 15vh;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
   font-family: 'Lato', sans-serif;
 }
 
 .community h1 {
   color: #FFFFFF;
   font-weight: 100;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
 }
 
 .community h1 span {
@@ -432,12 +486,14 @@
   background-color: #FFFFFF;
   font-size: 2rem;
   display: inline-block;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
   color: #ED145B;
   margin-left: 5%;
   font-weight: 600;
 }
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.prefixed.css.map */
