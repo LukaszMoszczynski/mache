@@ -9,7 +9,7 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
-		<section class="hero">
+		<section class="hero" id="home">
 <!-- navigation-->
 			<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="container">
@@ -22,7 +22,7 @@
 			        <span class="icon-bar"></span>
 			        <span class="icon-bar"></span>
 			      </button>
-			      <a class="navbar-brand" href="#">
+			      <a class="navbar-brand" href="#home">
 			        <img alt="Brand" src="images/logo.png">
 			      </a>
 			    </div>
@@ -30,11 +30,11 @@
 			    <!-- Collect the nav links, forms, and other content for toggling -->
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			      <ul class="nav  navbar-nav navbar-right">
-			        <li><a href="#">Home</a></li>
-			        <li><a href="#">About Us</a></li>  
-			        <li><a href="#">Our Services</a></li>  
-			        <li><a href="#">Prices</a></li> 
-			        <li><a href="#">Contact</a></li> 
+			        <li><a href="#home">Home</a></li>
+			        <li><a href="#power">About Us</a></li>  
+			        <li><a href="#services">Our Services</a></li>  
+			        <li><a href="#prices">Prices</a></li> 
+			        <li><a href="#about">Contact</a></li> 
 			      </ul>
 			    </div><!-- /.navbar-colapse -->
 			  </div><!-- /.container -->
@@ -46,15 +46,15 @@
 				<hr/>
 				<p>Elegant and clean PSD template, which you can download and use for free! <br>
 				You can easily modify the design to make it your own and help you get your project running faster.</p>
-				<a href="#">Show more</a>
+				<a href="#power">Show more</a>
 			</div>
 		</section>
 <!--power section -->
-		<section class="power">
+		<section class="power" id="power">
 			<div class="triangle"></div>			
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-6">
+					<div class="col-lg-6 hideme">
 						<h2>Powerfull PSD template <br> available for free!</h2>
 						<hr/>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consectetur nulla magna, sed aliquet magna luctus vitae. Sed maximus, turpis et laoreet pretium, magna felis congue libero, ac molestie augue dui at lectus. Vivamus eget nibh a dui accumsan porta et at odio. Nam eu blandit magna, eu elementum ipsum. Morbi scelerisque diam ac lectus sodales pellentesque. Integer sem justo, lobortis at ex in, pellentesque fermentum ante. Sed eget suscipit lectus, eu bibendum diam. Etiam varius, lacus vel cursus vehicula, sapien leo tempus dui, non vehicula libero tortor a elit.</p>
@@ -64,9 +64,9 @@
 			</div>
 		</section>
 <!--services section-->
-		<section class="services">
+		<section class="services" id="services">
 			<img class="mac" src="images/MacBook.png" alt="error">
-			<div class="container">
+			<div class="container hideme">
 				<h2>Our Services</h2>
 				<hr/>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consectetur nulla magna, sed aliquet magna luctus vitae. Sed maximus, turpis et laoreet pretium, magna felis congue libero, ac molestie augue dui at lectus.</p>
@@ -91,7 +91,7 @@
 			</div>
 		</section>
 <!--section slide-->
-		<section class="slide">
+		<section class="slide hideme">
 			<div id="text-carousel" class="carousel slide" data-ride="carousel">
 			    <div class="row">
 			        <div class="col-xs-offset-3 col-xs-6">
@@ -136,8 +136,8 @@
 			</div>
 		</section>
 <!--prices-->
-		<section class="prices">
-			<div class="container">
+		<section class="prices" id="prices">
+			<div class="container hideme">
 						<h2>Check Our Prices</h2>
 						<hr/>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consectetur nulla magna, sed aliquet magna luctus vitae. Sed maximus, turpis et laoreet pretium, magna felis congue libero, ac molestie augue 
@@ -154,7 +154,7 @@
 								<li>Nofitication settings</li>
 								<li>Password protection</li>
 							</ul>
-							<a href="#">BUY NOW</a>
+							<button>BUY NOW</button>
 						</div>
 					</div>
 					<div class="col-lg-3">
@@ -169,7 +169,7 @@
 								<li>Nofitication settings</li>
 								<li>Password protection</li>
 							</ul>
-							<a href="#">BUY NOW</a>
+							<button>BUY NOW</button>
 						</div>					
 					</div>
 					<div class="col-lg-3">
@@ -184,7 +184,7 @@
 								<li>Nofitication settings</li>
 								<li>Password protection</li>
 							</ul>
-							<a href="#">BUY NOW</a>
+							<button>BUY NOW</button>
 						</div>					
 					</div>
 					<div class="col-lg-3">
@@ -199,15 +199,15 @@
 								<li>Nofitication settings</li>
 								<li>Password protection</li>
 							</ul>
-							<a href="#">BUY NOW</a>
+							<button>BUY NOW</button>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 <!--section about-->
-		<section class="about">
-			<div class="container">
+		<section class="about" id="about">
+			<div class="container hideme">
 				<div class="row">
 					<div class="col-lg-4">
 						<div class="col-lg-3">
@@ -269,12 +269,104 @@
 			</div>			
 		</section>
 <!--community-->
-		<section class="community">
+		<section class="community hideme">
 			<div class="container">
-				<h1>BECAME A PART OF <span>MACHE</span> COMMUNITY TODAY <a href="#">JOIN US</a></h1>
+				<h1>BECAME A PART OF <span>MACHE</span> COMMUNITY TODAY <button>JOIN US</button></h1>
 			<div>
 		</section>
-
+<!--gallery-->
+		<section class="gallery">
+			<div class="container">
+				<h2>Out Latest Updates</h2>
+				<hr/>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consectetur nulla magna, sed aliquet magna luctus vitae. Sed maximus, turpis et laoreet pretium, magna felis congue libero, ac molestie augue </p>
+				<div class="row hideme">
+					<div class="col-lg-4">
+						<div class="image image-1">
+							<i class="fa fa-search"></i>
+							<div class="triangle"></div>
+						</div>
+						<h5>LOREM IPSUMA DOLOR SIT</h5>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consectetur nulla magna, sed aliquet magna luctus vitae.</p>
+					</div>		
+					<div class="col-lg-4">
+						<div class="image image-2">
+							<i class="fa fa-search"></i>
+							<div class="triangle"></div>
+						</div>
+						<h5>LOREM IPSUMA DOLOR SIT</h5>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consectetur nulla magna, sed aliquet magna luctus vitae.</p>
+					</div>	
+					<div class="col-lg-4">
+						<div class="image image-3">
+							<i class="fa fa-search"></i>
+							<div class="triangle"></div>
+						</div>
+						<h5>LOREM IPSUMA DOLOR SIT</h5>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consectetur nulla magna, sed aliquet magna luctus vitae.</p>
+					</div>	
+				</div>	
+				<div class="row hideme">
+					<div class="col-lg-4">
+						<div class="image image-4">
+							<i class="fa fa-search"></i>
+							<div class="triangle"></div>
+						</div>
+						<h5>LOREM IPSUMA DOLOR SIT</h5>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consectetur nulla magna, sed aliquet magna luctus vitae.</p>
+					</div>		
+					<div class="col-lg-4">
+						<div class="image image-5">
+							<i class="fa fa-search"></i>
+							<div class="triangle"></div>
+						</div>
+						<h5>LOREM IPSUMA DOLOR SIT</h5>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consectetur nulla magna, sed aliquet magna luctus vitae.</p>
+					</div>	
+					<div class="col-lg-4">
+						<div class="image image-6">
+							<i class="fa fa-search"></i>
+							<div class="triangle"></div>
+						</div>
+						<h5>LOREM IPSUMA DOLOR SIT</h5>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consectetur nulla magna, sed aliquet magna luctus vitae.</p>
+					</div>		
+				</div>
+				<a href ="#template">SHOW MORE <br> <i class="fa fa-chevron-down"></i></a>
+			</div>
+		</section>
+<!--template-->
+		<section class="template-main hideme" id="template">
+			<div class="template"></div>
+			<div class="container">
+				<h2>Mache Free PSD Template</h2>
+				<hr/>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consectetur nulla magna, sed aliquet magna luctus vitae. Sed maximus, turpis et laoreet pretium, magna felis congue libero, ac molestie augue </p>
+				<a href ="#share">SHOW MORE</a>
+			</div>
+		</section>
+<!--share-->
+		<section class="share hideme" id="share">
+			<div class="row">
+				<div class="col-lg-6">
+					<img src="images/Safari.png" alt="error">
+				</div>
+				<div class="col-lg-6 right">
+					<h2>Please share some love<br> by appreciate it and download!</h2>
+					<hr/>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consectetur nulla magna, sed aliquet magna luctus vitae. Sed maximus, turpis et laoreet pretium, magna felis congue libero, ac molestie augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consectetur nulla magna, sed aliquet magna luctus vitae. Sed maximus, turpis et laoreet pretium, magna felis congue libero, ac molestie augue. </p>
+					<button>DOWNLOAD NOW</button>
+				</div>
+			</div>
+		</section>
+<!-- footer-->
+		<section class="footer">
+			<div class="container">
+				<div>&copy; 2015 COPYRIGHT MACHE TEMPLATE</div>
+				<div>DESIGNED BY <span>SYMU</span><span class="dot">.</span>CO</div>
+			</div>			
+		</section>
+<!--scripts-->		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/scripts.js"></script>
