@@ -30,7 +30,6 @@
 }
 
 .hero .navbar-default {
-  height: 50px;
   background-color: transparent;
   border: none;
   opacity: 0.8;
@@ -44,12 +43,48 @@
 
 .hero .navbar-default .navbar-nav li a {
   color: #FFFFFF;
-  transition: 0.5s;
+  transition: 0.3s;
+  position: relative;
+  text-decoration: none;
 }
 
 .hero .navbar-default .navbar-nav li a:hover {
   color: #ED145B;
-  border-bottom: 3px solid #ED145B;
+}
+
+.hero .navbar-default .navbar-nav li a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ED145B;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.hero .navbar-default .navbar-nav li a:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.hero .navbar-default .navbar-toggle {
+  border-color: #ED145B;
+}
+
+.hero .navbar-default .navbar-toggle:hover {
+  background-color: #FFFFFF;
+}
+
+.hero .navbar-default .navbar-collapse {
+  text-align: center;
+  border-color: #ED145B;
+}
+
+.hero .navbar-default .icon-bar {
+  background-color: #ED145B;
 }
 
 .hero .spacer {
@@ -335,8 +370,8 @@
 .prices .row {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -ms-flex-pack: center;
+      justify-content: center;
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-wrap: wrap;
@@ -346,7 +381,7 @@
 
 .prices .row .col-lg-3 {
   width: 250px;
-  padding: 0;
+  margin: 1%;
 }
 
 .prices .row .col-lg-3:hover .top {
@@ -440,29 +475,38 @@
 }
 
 /*section about*/
-.about {
-  padding: 100px 0;
-}
-
 .about .row {
-  padding: 25px 0;
+  padding: 5% 0;
   font-family: 'Lato', sans-serif;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.about .row h5 {
+.about .row .col-lg-4 {
+  width: 350px;
+  margin: 1%;
+}
+
+.about .row .col-lg-4 h5 {
   color: #ED145B;
   font-weight: 600;
 }
 
-.about .row p {
+.about .row .col-lg-4 p {
   line-height: 200%;
 }
 
-.about .row img {
+.about .row .col-lg-4 img {
   transition: transform 0.5s ease-in-out;
 }
 
-.about .row img:hover {
+.about .row .col-lg-4 img:hover {
   transform: rotateY(360deg);
 }
 
@@ -471,8 +515,7 @@
   height: 15vh;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
+  text-align: center;
   -ms-flex-align: center;
       align-items: center;
   font-family: 'Lato', sans-serif;
@@ -498,11 +541,9 @@
   border: 0;
   height: 50px;
   width: 200px;
-  text-decoration: none;
   border-radius: 30px;
   background-color: #FFFFFF;
   font-size: 2rem;
-  display: inline-block;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -594,7 +635,18 @@
   margin-bottom: 10%;
 }
 
-.gallery .col-lg-4 {
+.gallery .row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.gallery .row .col-lg-4 {
   background-color: #F4F4F4;
   display: -ms-flexbox;
   display: flex;
@@ -609,7 +661,7 @@
   margin-bottom: 5%;
 }
 
-.gallery .col-lg-4 .image {
+.gallery .row .col-lg-4 .image {
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
@@ -625,20 +677,20 @@
       justify-content: center;
 }
 
-.gallery .col-lg-4 .image:hover .triangle {
+.gallery .row .col-lg-4 .image:hover .triangle {
   height: 700%;
   width: 120%;
   right: -20%;
   opacity: 0.7;
 }
 
-.gallery .col-lg-4 .image:hover i {
+.gallery .row .col-lg-4 .image:hover i {
   visibility: visible;
   animation: fadeIn 1s;
   transition-delay: 0s;
 }
 
-.gallery .col-lg-4 .image .triangle {
+.gallery .row .col-lg-4 .image .triangle {
   background-image: linear-gradient(to right top, #ED145B 50%, transparent 50%);
   position: absolute;
   width: 100%;
@@ -649,7 +701,7 @@
   z-index: 1;
 }
 
-.gallery .col-lg-4 .image i {
+.gallery .row .col-lg-4 .image i {
   color: #FFFFFF;
   display: -ms-flexbox;
   display: flex;
@@ -666,7 +718,7 @@
   animation: fadeOut 1s;
 }
 
-.gallery .col-lg-4 h5 {
+.gallery .row .col-lg-4 h5 {
   padding: 4% 2%;
   width: 100%;
   text-align: left;
@@ -674,7 +726,7 @@
   font-weight: 600;
 }
 
-.gallery .col-lg-4 p {
+.gallery .row .col-lg-4 p {
   padding: 0 2%;
   text-align: left;
 }
@@ -713,6 +765,7 @@
   height: 70vh;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   animation: 10s linear zoom infinite;
 }
 
@@ -850,6 +903,7 @@
 @media (max-width: 1900px) {
   .services .mac {
     transform: scale(0.7);
+    top: -65%;
   }
   .share {
     padding: 5% 0;
@@ -876,36 +930,97 @@
 
 @media (max-width: 1600px) {
   .services .mac {
-    transform: scale(0.5);
+    transform: scale(0.6);
     right: -10%;
+    top: -70%;
+  }
+  .services .container {
+    padding-top: 6%;
   }
 }
 
 @media (max-width: 1400px) {
   .services .mac {
-    top: -80%;
-    right: -20%;
+    top: -65%;
+    right: -15%;
   }
 }
 
 @media (max-width: 1199px) {
+  .power .container h2 {
+    text-align: center;
+  }
+  .power .container hr {
+    border-color: #ED145B;
+    width: 30%;
+    border-width: 2px;
+    margin: 5% 35%;
+  }
   .services .mac {
-    display: none;
+    transform: scale(0.4);
   }
   .share {
     padding: 5% 5%;
   }
-  .community {
+  .community h1 {
+    font-size: 2rem;
+  }
+  .community h1 button {
+    height: 40px;
+    width: 150px;
+  }
+  .slide .carousel {
+    font-size: 1.5rem;
+  }
+  .slide .carousel i {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .services .mac {
     display: none;
   }
 }
 
 @media (max-width: 768px) {
+  .hero li a {
+    border: none;
+  }
+  .hero li a:before {
+    width: 20%;
+  }
   .share img {
     display: none;
   }
-  .navbar-default {
-    height: 380px;
+  .community .container {
+    width: 100%;
+  }
+  .community .container h1 {
+    font-size: 2rem;
+  }
+  .community .container h1 button {
+    height: 40px;
+    width: 100px;
+    font-size: 1rem;
+  }
+  .slide .carousel {
+    font-size: 1rem;
+  }
+  .slide .carousel i {
+    font-size: 1.5rem;
+  }
+  .template-main .container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .template-main .container {
+    top: -50%;
+  }
+  .power .triangle {
+    height: 5%;
   }
 }
 /*# sourceMappingURL=style.prefixed.css.map */
