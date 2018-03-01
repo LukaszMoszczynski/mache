@@ -9,8 +9,7 @@ $color-grey: #5A5A5A;
  outline: none;
 /*border: 2px solid red;*/
 }
-.hideme
-{
+.hideme {
     opacity:0;
 }
 /*fixed right overlap*/
@@ -32,6 +31,7 @@ $color-grey: #5A5A5A;
 		border: none;
 		opacity: 0.8;
 		transition: 0.5s;
+		padding-top: 25px;
 		.navbar-nav {
 			li {
 				font-family: 'Lato', sans-serif;
@@ -72,6 +72,12 @@ $color-grey: #5A5A5A;
 		.navbar-collapse {
 	 		text-align: center;
 	 		border-color: $color-pink;
+	 		.nav {
+ 			    display: flex;
+			    align-items: center;
+			    justify-content: center;
+			    flex-wrap: wrap;
+	 		}
  		}
  		.icon-bar {
  			background-color: $color-pink;
@@ -135,7 +141,7 @@ $color-grey: #5A5A5A;
 	position: relative;
 	background-color: $color-cream;
 	.triangle {
-		background-image: linear-gradient(to right bottom, $color-pink 50%, transparent 50%);
+		background-image: linear-gradient(to right bottom, $color-pink 49%, transparent 50%);
 		position: absolute;
 		width: 100%;
 		height: 10%;
@@ -153,7 +159,7 @@ $color-grey: #5A5A5A;
  			border-color: $color-pink;
  			width: 30%;
  			border-width: 2px;	
- 			margin: 5% 0;
+			margin: 3% 0;
  		}
  		p {
  			font-family: 'Lato', sans-serif;
@@ -200,7 +206,6 @@ $color-grey: #5A5A5A;
 			border-color: $color-pink;
  			width: 15%;
  			border-width: 2px;	
- 			margin: 5% 0;
 	 	}
 	 	p {
 	 		text-align: center;
@@ -251,13 +256,14 @@ $color-grey: #5A5A5A;
 	 }
 }
 /*slide section*/
-.slide {
+.slide-show {
 	background-image: url("../images/bg-1.png");
 	height: 50vh;
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: $color-white;
 	.carousel {
+		height: 100%;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -266,6 +272,9 @@ $color-grey: #5A5A5A;
 	 	font-family: 'Lato', sans-serif;
 	 	font-size: 2rem;
 	 	font-weight: 100;
+	 	.carousel-control {
+	 		cursor: pointer;
+	 	}
 	 	i {
 	 		color: $color-pink;
 	 		font-size: 3rem;
@@ -520,7 +529,7 @@ $color-grey: #5A5A5A;
 					transition-delay: 0s;
 				}
 				.triangle {
-					background-image: linear-gradient(to right top, $color-pink 50%, transparent 50%);
+					background-image: linear-gradient(to right top, $color-pink 48%, transparent 50%);
 					position: absolute;
 					width: 100%;
 					height: 10%;
@@ -582,7 +591,7 @@ $color-grey: #5A5A5A;
 }
 .template-main {
 	overflow: hidden;
-	position:relative;
+	position: relative;
 	.template {
 		background-image: url("../images/bg-1.png");
 		height: 70vh;
@@ -593,9 +602,9 @@ $color-grey: #5A5A5A;
 	}
 	.container {
 		position: absolute;
-		top: 10%;
-	 	right: 50%;
-	 	transform: translate(50%, 50%);
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
 	 	display: flex;
 		justify-content: center;
 		align-items: center;
@@ -614,7 +623,7 @@ $color-grey: #5A5A5A;
 		}
 		p {
 			text-align: center;
-			padding: 3% 20%;
+			padding: 0 20% 3% 20%;
 			line-height: 200%;
 		}
 		a {
@@ -647,7 +656,7 @@ $color-grey: #5A5A5A;
 			border-color: $color-pink;
 			width: 25%;
 			border-width: 2px;
-			margin: 5% 0;
+			margin: 2% 0;
 		}
 		p {
 			line-height: 200%;
@@ -726,8 +735,8 @@ $color-grey: #5A5A5A;
 	.services {
 		.mac {
 	 		transform: scale(0.6);
-	 		right: -10%;
-	 		top: -70%
+	 		right: -12%;
+	 		top: -90%
 		}
 		.container {
 			padding-top: 6%;
@@ -735,14 +744,7 @@ $color-grey: #5A5A5A;
 	}
 }
 
-@media(max-width: 1400px) {
-	.services {
-	 .mac {
-	 		top: -65%;
-	 		right: -15%;
-		}
-	}
-}
+
 @media(max-width: 1199px) {
 	.power {
 		.container {
@@ -760,6 +762,8 @@ $color-grey: #5A5A5A;
 	.services {
 		.mac {
 	 		transform: scale(0.4);
+	 		right: -12%;
+	 		top: -70%
 		}
 	}
 	.share {
@@ -775,7 +779,7 @@ $color-grey: #5A5A5A;
 			}
 		}
 	}
-	.slide {
+	.slide-show {
 		.carousel {
 		 	font-size: 1.5rem;
 		 	i {
@@ -793,7 +797,13 @@ $color-grey: #5A5A5A;
 }
 
 @media(max-width: 768px) {
+	.hideme {
+	    opacity: 1;
+	}
 	.hero {
+		.navbar-default {
+			padding-top: 10px;
+		}
 		li {
 			a {
 				border: none;
@@ -821,7 +831,7 @@ $color-grey: #5A5A5A;
 			}
 		}		
 	}	
-	.slide {
+	.slide-show {
 		.carousel {
 		 	font-size: 1rem;
 		 	i {
@@ -837,11 +847,6 @@ $color-grey: #5A5A5A;
 }
 
 @media(max-width: 600px) {
-	.template-main {
-		.container {
-			top: -50%;
-		}	
-	}
 	.power {
 		.triangle {
 			height: 5%;
